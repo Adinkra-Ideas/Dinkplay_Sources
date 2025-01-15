@@ -2,10 +2,6 @@ cmake_minimum_required(VERSION 3.19)
 
 project(Dinkplay VERSION 0.1 LANGUAGES CXX)
 
-# Required for erasing "missing dsym" error when building archive for app
-# store connect. Comment out during development.
-# set(QT_USE_RISKY_DSYM_ARCHIVING_WORKAROUND ON)
-
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(UI ui)
@@ -65,6 +61,7 @@ qt_add_qml_module(appDinkplay
         Interval.hpp #Interval.cpp
         Player.hpp #Player.cpp
         IntervalWorker.hpp #IntervalWorker.cpp
+        #CompileC /Users/daniel/Documents/Dinkplay/build/Qt_6_8_1_for_iOS/build/appDinkplay.build/Release-iphoneos/Objects-normal/arm64/Player.o
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
