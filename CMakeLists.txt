@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(UI ui)
 
+
 find_package(Qt6 6.5 REQUIRED COMPONENTS
     Quick
     Core
@@ -16,20 +17,27 @@ find_package(Qt6 6.5 REQUIRED COMPONENTS
 
 qt_standard_project_setup(REQUIRES 6.5)
 
+# qt_add_resources(SOURCESa qml.qrc)
 qt_add_executable(appDinkplay
+    #main.cpp
+    #${SOURCESa}
+    iOS_Binaries/qrc_qml.cpp
 )
+
+add_compile_definitions(MYPROJECT_NAME=${SOURCESa})
+
 
 qt_add_qml_module(appDinkplay
     URI Dinkplay
     VERSION 1.0
-    QML_FILES
-        Main.qml
-        QML_FILES ${UI}/TopControls.qml
-        QML_FILES ${UI}/Playing.qml
-        QML_FILES ${UI}/Audio.qml
-        QML_FILES ${UI}/Settings.qml
-        QML_FILES ${UI}/MediaControls.qml
-        QML_FILES ${UI}/About.qml
+    # QML_FILES
+        # Main.qml
+        # QML_FILES ${UI}/TopControls.qml
+        # QML_FILES ${UI}/Playing.qml
+        # QML_FILES ${UI}/Audio.qml
+        # QML_FILES ${UI}/Settings.qml
+        # QML_FILES ${UI}/MediaControls.qml
+        # QML_FILES ${UI}/About.qml
     RESOURCES
         ${UI}/images/musicSpin.gif
         ${UI}/images/musicIco/artist.png
@@ -53,14 +61,15 @@ qt_add_qml_module(appDinkplay
         ${UI}/images/musicIco/loop2.png
         ${UI}/images/musicIco/exercise.gif
     SOURCES
-        Media.hpp #Media.cpp
-        Top.hpp #Top.cpp
-        Directory.hpp #Directory.cpp
-        ChangePlay.hpp #ChangePlay.cpp
-        Interval.hpp #Interval.cpp
-        Player.hpp #Player.cpp
-        IntervalWorker.hpp #IntervalWorker.cpp
-        #CompileC /Users/daniel/Documents/Dinkplay/build/Qt_6_8_1_for_iOS/build/appDinkplay.build/Release-iphoneos/Objects-normal/arm64/Player.o
+        # _main.cpp
+        # Media.hpp Media.cpp
+        # Top.hpp Top.cpp
+        # Directory.hpp Directory.cpp
+        # ChangePlay.hpp ChangePlay.cpp
+        # Interval.hpp Interval.cpp
+        # Player.hpp Player.cpp
+        # IntervalWorker.hpp IntervalWorker.cpp
+        #CompileC /Users/daniel/Documents/Dinkplayobj/build/Qt_6_8_1_for_iOS/build/appDinkplay.build/Release-iphoneos/Objects-normal/arm64/Player.o
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
@@ -77,22 +86,22 @@ set_target_properties(appDinkplay PROPERTIES
 
 target_link_options(appDinkplay BEFORE PUBLIC
     -L./ma_lib
-    ./iOS_Binaries/Media.o
-    ./iOS_Binaries/Top.o
-    ./iOS_Binaries/Directory.o
-    ./iOS_Binaries/ChangePlay.o
-    ./iOS_Binaries/Interval.o
-    ./iOS_Binaries/Player.o
-    ./iOS_Binaries/IntervalWorker.o
-    ./iOS_Binaries/main.o
-    # ./iOS_Binaries/About_qml.o
+    # ./iOS_Binaries/Media.o
+    # ./iOS_Binaries/Top.o
+    # ./iOS_Binaries/Directory.o
+    # ./iOS_Binaries/ChangePlay.o
+    # ./iOS_Binaries/Interval.o
+    # ./iOS_Binaries/Player.o
+    # ./iOS_Binaries/IntervalWorker.o
+    # ./iOS_Binaries/main.o
+    #  ./iOS_Binaries/About_qml.o
     # ./iOS_Binaries/MediaControls_qml.o
     # ./iOS_Binaries/Settings_qml.o
     # ./iOS_Binaries/Audio_qml.o
     # ./iOS_Binaries/Playing_qml.o
     # ./iOS_Binaries/TopControls_qml.o
     # ./iOS_Binaries/appDinkplay_Main_qml.o
-    ./iOS_Binaries/MyMPRemoteCC.o
+    # ./iOS_Binaries/MyMPRemoteCC.o
     # Till here found in CompileC /Users/daniel/Documents/Dinkplay/build/Qt_6_8_1_for_iOS/build/appDinkplay.build/Release-iphoneos/Objects-normal/arm64/Player.o
 )
 
@@ -117,7 +126,7 @@ target_link_libraries(appDinkplay PRIVATE
         ${default_artist_icon}
         ${asset_catalog_path}
         # ma_lib/miniaudio.m # added for simulator
-        #iOS/src/MyMPRemoteCC.h #iOS/src/MyMPRemoteCC.mm########
+        #iOS/src/MyMPRemoteCC.h iOS/src/MyMPRemoteCC.mm ########
     )
     set_source_files_properties(
         ${default_audio} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources/audios"
@@ -157,6 +166,7 @@ target_link_libraries(appDinkplay PRIVATE
 
     target_link_libraries(appDinkplay PRIVATE
         miniaudio_iOSLgplv3 #removed for simulator
+        all_iOS
         "-framework MediaPlayer"
         "-framework AVFoundation"
     )
