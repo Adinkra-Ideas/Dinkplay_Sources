@@ -17,7 +17,6 @@ find_package(Qt6 6.5 REQUIRED COMPONENTS
 qt_standard_project_setup(REQUIRES 6.5)
 
 qt_add_executable(appDinkplay
-    main.cpp
 )
 
 qt_add_qml_module(appDinkplay
@@ -85,6 +84,15 @@ target_link_options(appDinkplay BEFORE PUBLIC
     ./iOS_Binaries/Interval.o
     ./iOS_Binaries/Player.o
     ./iOS_Binaries/IntervalWorker.o
+    ./iOS_Binaries/main.o
+    # ./iOS_Binaries/About_qml.o
+    # ./iOS_Binaries/MediaControls_qml.o
+    # ./iOS_Binaries/Settings_qml.o
+    # ./iOS_Binaries/Audio_qml.o
+    # ./iOS_Binaries/Playing_qml.o
+    # ./iOS_Binaries/TopControls_qml.o
+    # ./iOS_Binaries/appDinkplay_Main_qml.o
+    ./iOS_Binaries/MyMPRemoteCC.o
     # Till here found in CompileC /Users/daniel/Documents/Dinkplay/build/Qt_6_8_1_for_iOS/build/appDinkplay.build/Release-iphoneos/Objects-normal/arm64/Player.o
 )
 
@@ -100,33 +108,7 @@ target_link_libraries(appDinkplay PRIVATE
     Qt6::Qml
     Qt6::Widgets
 )
-if (WIN32)
-    target_link_libraries(appDinkplay PRIVATE
-        miniaudio_win32
-    )
-elseif (ANDROID)
-    # This filepath is based on default Qt AppData path for windows. Change if on different OS
-    include(C:/Users/user/AppData/Local/Android/Sdk/android_openssl/CMakeLists.txt)
-    target_sources(appDinkplay PRIVATE
-        android/AndroidManifest.xml android/build.gradle android/res/values/libs.xml android/res/xml/qtprovider_paths.xml android/gradle/wrapper/gradle-wrapper.jar android/gradle/wrapper/gradle-wrapper.properties android/gradle.properties android/gradlew android/gradlew.bat
-        android/src/com/denkplay/states/DenkService.java
-        android/src/com/denkplay/states/DenkActivity.java
-    )
 
-    # set_target_properties() is used to initialize qt macros
-    # for buld time.
-    set_target_properties(appDinkplay PROPERTIES
-       QT_ANDROID_PACKAGE_SOURCE_DIR ${CMAKE_SOURCE_DIR}/android
-    )
-
-    target_link_libraries(appDinkplay PRIVATE
-        miniaudio_armv7a
-        # miniaudio_arm64
-        # miniaudio_x86
-        # miniaudio_x86_64
-        Qt6::CorePrivate
-    )
-elseif (IOS)
     set(default_audio "${CMAKE_SOURCE_DIR}/android/assets/Dinkplay_Tone.mp3")
     set(default_artist_icon "${UI}/images/musicIco/artist.png")
     set(asset_catalog_path "iOS/Assets.xcassets") #naming the folder ".whatever" makes it pickable as a single file into bundle I believe
@@ -135,7 +117,7 @@ elseif (IOS)
         ${default_artist_icon}
         ${asset_catalog_path}
         # ma_lib/miniaudio.m # added for simulator
-        iOS/src/MyMPRemoteCC.h iOS/src/MyMPRemoteCC.mm
+        #iOS/src/MyMPRemoteCC.h #iOS/src/MyMPRemoteCC.mm########
     )
     set_source_files_properties(
         ${default_audio} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources/audios"
@@ -178,7 +160,7 @@ elseif (IOS)
         "-framework MediaPlayer"
         "-framework AVFoundation"
     )
-endif()
+
 
 
 include(GNUInstallDirs)
