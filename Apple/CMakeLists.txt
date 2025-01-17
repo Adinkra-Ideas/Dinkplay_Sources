@@ -17,15 +17,13 @@ qt_standard_project_setup(REQUIRES 6.5)
 
 qt_add_executable(appDinkplay
     closed_sources/fingerprints.cpp
-    closed_sources/media_cat0.cpp
-    closed_sources/media_cat1.cpp
 )
 
 qt_add_qml_module(appDinkplay
     URI Dinkplay
     VERSION 1.0
-
-    SOURCES
+    QML_FILES
+        DEFINES.qml
 )
 
 target_link_options(appDinkplay BEFORE PUBLIC
@@ -38,10 +36,14 @@ target_link_libraries(appDinkplay PRIVATE
     Qt6::QuickControls2
     Qt6::Qml
     Qt6::Widgets
-    all_iOS.a
+    all_iOS
     "-framework MediaPlayer"
     "-framework AVFoundation"
 )
+
+# /Users/daniel/Qt/6.8.1/ios/qml/QtQuick/objects-Release/qtquick2plugin_init/qtquick2plugin_init.cpp.o
+# /Users/daniel/Qt/6.8.1/ios/qml/QtQuick/libqtquick2plugin.a
+# /Users/daniel/Qt/6.8.1/ios/qml/QtQuick/libqtquick2plugin.a
 
 set(asset_catalog_path "${CMAKE_SOURCE_DIR}/iOS/Assets.xcassets")
 
