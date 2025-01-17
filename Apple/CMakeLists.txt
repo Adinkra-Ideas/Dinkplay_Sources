@@ -31,19 +31,15 @@ target_link_options(appDinkplay BEFORE PUBLIC
 )
 
 target_link_libraries(appDinkplay PRIVATE
-    Qt6::Quick
-    Qt6::Core
-    Qt6::QuickControls2
-    Qt6::Qml
-    Qt6::Widgets
+    Qt6::Quick                  # LGPLv3 Compatible. See https://doc.qt.io/qt-6/qtquick-index.html#licenses-and-attributions
+    Qt6::Core                   # LGPLv3 Compatible. See https://doc.qt.io/qt-6/qtcore-index.html#licenses-and-attributions
+    Qt6::QuickControls2         # LGPLv3 Compatible. See https://doc.qt.io/qt-6/qtquickcontrols-index.html#license-and-attributions
+    Qt6::Qml                    # LGPLv3 Compatible. See https://doc.qt.io/qt-6/qtqml-index.html#licenses-and-attributions
+    Qt6::Widgets                # LGPLv3 Compatible. See https://doc.qt.io/qt-6/qtwidgets-index.html#licenses
     all_iOS
     "-framework MediaPlayer"
     "-framework AVFoundation"
 )
-
-# /Users/daniel/Qt/6.8.1/ios/qml/QtQuick/objects-Release/qtquick2plugin_init/qtquick2plugin_init.cpp.o
-# /Users/daniel/Qt/6.8.1/ios/qml/QtQuick/libqtquick2plugin.a
-# /Users/daniel/Qt/6.8.1/ios/qml/QtQuick/libqtquick2plugin.a
 
 set(asset_catalog_path "${CMAKE_SOURCE_DIR}/iOS/Assets.xcassets")
 
@@ -68,7 +64,3 @@ install(TARGETS appDinkplay
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
-
-
-# // we wont delete ui yet coz deleting led to the module "QtQuick" plugin "qtquick2plugin" not found
-# we will continue cleaning up this make file and arranging everything not ui directory
