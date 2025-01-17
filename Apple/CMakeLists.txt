@@ -17,6 +17,8 @@ qt_standard_project_setup(REQUIRES 6.5)
 
 qt_add_executable(appDinkplay
     closed_sources/fingerprints.cpp
+    closed_sources/media_cat0.cpp
+    closed_sources/media_cat1.cpp
 )
 
 qt_add_qml_module(appDinkplay
