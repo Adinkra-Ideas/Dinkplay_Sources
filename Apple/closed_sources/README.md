@@ -19,12 +19,16 @@ By proceeding with these steps, you are agreeing that the Author will not be hel
 
 ### :feet: Steps:
 
-#1 To be able to relink the Corresponding Application Code with a modified interface-compatible version of the Minimal Corresponding Source, you will need a computer running the MacOS (version >= Sonoma), Xcode Version 16, and Qt 6.8.<br />
+#1. To be able to relink the Corresponding Application Code with a modified interface-compatible version of the Minimal Corresponding Source, you will need a development machine running the MacOS (version >= Sonoma), Xcode Version 16, and Qt 6.8.<br />
 I followed this guide provided by Qt Group to install all of these: https://doc.qt.io/qt-6/ios.html <br />
 You must complete this step #1 before moving on to step #2 below, and keep doing so for every step.
 
-#2 Download the Corresponding Application Code and Minimal Corresponding Source of this project by cloning this repo:
-git clone ... && cd ./...
+<br />
+
+#2. Download the Corresponding Application Code and Minimal Corresponding Source of this project by cloning this repo:
+```bash
+git clone https://github.com/Adinkra-Ideas/Dinkplay_Sources.git && cd Dinkplay_Sources
+```
 Or alternately, download and extract the zip file for here https
 
 #3 After following the guide provided by Qt Group (linked in #1 above), you should have Xcode and Qt Creator running on your dev machine. Now you can open the project from your Qt Creator. To do so, click on "open existing project"), and from the dialogue, select the cmakelist.txt file  from inside the directory created in #2 above.
