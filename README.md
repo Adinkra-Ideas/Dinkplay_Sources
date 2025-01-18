@@ -1,7 +1,7 @@
 # [:memo: About Dinkplay Multi-Platform Audio Timer](#memo--documentations)
 
 <p>
-	<img src="./Apple/iOS/Assets.xcassets/AppIcon.appiconset/AppIcon1024x1024.png" >
+	<img src="./Apple/iOS/Assets.xcassets/AppIcon.appiconset/AppIcon1024x1024.png" width="400" height="400" />
 </p>
 
 ## :memo:  A Scheduled Interval Audio Player App
