@@ -38,14 +38,22 @@ Now you can open the project from your Qt Creator. <br />
 To do so from Qt Creator, click on "Open Project ...", and from the Dialog, select the CMakeLists.txt file from inside the Dinkplay_Sources directory created in Step #2 above.<br />
 The lines where the LGPLv3 Minimal Corresponding Source Qt Libraries were included into the Combined Work are present inside the DEFINES.qml and CMakeLists.txt files; both located inside the root directory of the project. <br />
 I made these lines prominent therein, using the "LGPLv3 Compatible" text as EOL Comments. <br />
-To modify, you can replace any of these includes with another interface-compatible version provided of your choice. 
+To modify, you can replace any of these Includes with another interface-compatible version of your choice. 
 
 
 <br />
 
 
-#4 To build the project, simply click on the Hammer Icon at the bottom left of Qt Creator. But to deploy to your iOS device, you will need to create a development provisioning profile for your Xcode. Apple provides a guide on this link on how to do so: https://developer.apple.com/help/account/manage-profiles/create-a-development-provisioning-profile/
-After following the aforementioned guide and setting up the development provisioning profile, you can now connect your iOS device to your development machine, then click the Run icon from the opened project in Qt creator. 
-Qt will now build and deploy Dinkplay into your connected iOS device.
+#4. When you're done modifying, you would want to build the project.<br />
+To do so, simply click on the Hammer Icon located at the bottom left of Qt Creator screen and you will find the built executable inside the Qt build directory auto-created for your workspace.<br />
+But to deploy the built executable into your iOS device, you will need to create a development provisioning profile for your running Xcode.<br />
+Apple provides a guide on this link on how to do so: https://developer.apple.com/help/account/manage-profiles/create-a-development-provisioning-profile/ <br />
+After following the aforementioned guide and setting up the development provisioning profile, you can now connect your iOS device to your development machine, then click the Run icon from the opened project in Qt creator. <br />
+Qt will now build and deploy Dinkplay into your connected iOS device.<br />
+
+
+<br />
+
 
 There you have it..
+
