@@ -19,9 +19,9 @@ By proceeding with these steps, you are agreeing that the Author will not be hel
 
 ### :feet: Steps:
 
-#1. To be able to relink the Corresponding Application Code with a modified interface-compatible version of the Minimal Corresponding Source, you will need a development machine running the MacOS (version >= Sonoma), Xcode Version 16, and Qt 6.8.<br />
-I followed this guide provided by Qt Group to install all of these: https://doc.qt.io/qt-6/ios.html <br />
-You must complete this step #1 before moving on to step #2 below, and keep doing so for every step.
+#1. To be able to relink the Corresponding Application Code with a modified interface-compatible version of the Minimal Corresponding Source, you will need access to a development machine running MacOS (version >= Sonoma). Then on this machine, you need to setup Xcode Version 16, and Qt 6.8.<br />
+I followed this setup guide provided by Qt Group for installing all these tools: https://doc.qt.io/qt-6/ios.html <br />
+You must complete this Step #1 before moving on to Step #2 below, and keep doing so for every step.
 
 <br />
 
@@ -29,12 +29,20 @@ You must complete this step #1 before moving on to step #2 below, and keep doing
 ```bash
 git clone https://github.com/Adinkra-Ideas/Dinkplay_Sources.git && cd Dinkplay_Sources
 ```
-Or alternately, download and extract the zip file for here https
+Or alternately, you can download and extract the zip file from here [Dinkplay_Sources](https://github.com/Adinkra-Ideas/Dinkplay_Sources/archive/refs/heads/main.zip)
 
-#3 After following the guide provided by Qt Group (linked in #1 above), you should have Xcode and Qt Creator running on your dev machine. Now you can open the project from your Qt Creator. To do so, click on "open existing project"), and from the dialogue, select the cmakelist.txt file  from inside the directory created in #2 above.
-The lines where the LGPLv3 Minimal Corresponding Source Qt Libraries were included into the Combined Work are present inside the DEFINES.qml and Cmakelist.txt files; both located inside the root directory of the project. 
-I commented these lines with "LGPLv3 compatible" to make them prominent. 
+<br />
+
+#3. After following the setup guide provided by Qt Group (linked in Step #1 above), you should have Xcode and Qt Creator running on your dev machine at this point. <br />
+Now you can open the project from your Qt Creator. <br />
+To do so from Qt Creator, click on "Open Project ...", and from the Dialog, select the CMakeLists.txt file from inside the Dinkplay_Sources directory created in Step #2 above.<br />
+The lines where the LGPLv3 Minimal Corresponding Source Qt Libraries were included into the Combined Work are present inside the DEFINES.qml and CMakeLists.txt files; both located inside the root directory of the project. <br />
+I made these lines prominent therein, using the "LGPLv3 Compatible" text as EOL Comments. <br />
 To modify, you can replace any of these includes with another interface-compatible version provided of your choice. 
+
+
+<br />
+
 
 #4 To build the project, simply click on the Hammer Icon at the bottom left of Qt Creator. But to deploy to your iOS device, you will need to create a development provisioning profile for your Xcode. Apple provides a guide on this link on how to do so: https://developer.apple.com/help/account/manage-profiles/create-a-development-provisioning-profile/
 After following the aforementioned guide and setting up the development provisioning profile, you can now connect your iOS device to your development machine, then click the Run icon from the opened project in Qt creator. 
