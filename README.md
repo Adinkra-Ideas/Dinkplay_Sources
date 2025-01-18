@@ -1,6 +1,10 @@
 # [:memo: About Dinkplay Multi-Platform Audio Timer](#memo--documentations)
 
-A Scheduled Interval Audio Player App
+<p>
+	<img src="./Apple/iOS/Assets.xcassets/AppIcon.appiconset/AppIcon1024x1024.png" >
+</p>
+
+## :memo:  A Scheduled Interval Audio Player App
 
 Dinkplay allows users to use their favorite Audios as an Interval Timer. 
 
