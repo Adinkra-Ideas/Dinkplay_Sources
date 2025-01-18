@@ -35,7 +35,7 @@ Or alternately, you can download and extract the zip file from here [Dinkplay_So
 
 #3. After following the setup guide provided by Qt Group (linked in Step #1 above), you should have Xcode and Qt Creator running on your dev machine at this point. <br />
 Now you can open the project from your Qt Creator. <br />
-To do so from Qt Creator, click on "Open Project ..." from the welcome screen, and from the Dialog, select the CMakeLists.txt file from inside the Dinkplay_Sources directory created in Step #2 above.<br />
+To do so from Qt Creator, click on "Open Project ..." from the welcome screen, and from the Dialog, select the CMakeLists.txt file inside the Dinkplay_Sources directory created in Step #2 above.<br />
 The lines where the LGPLv3 Minimal Corresponding Source Qt Libraries were included into the Combined Work are present inside the DEFINES.qml and CMakeLists.txt files; both located inside the root directory of the project. <br />
 I made these lines prominent therein, using the "LGPLv3 Compatible" text as EOL Comments. <br />
 To modify, you can replace any of these Includes with another interface-compatible version of your choice. 
@@ -44,7 +44,7 @@ To modify, you can replace any of these Includes with another interface-compatib
 <br />
 
 
-#4. When you're done modifying, you would want to build the project.<br />
+#4. When you're done modifying, you may want to build the project.<br />
 To do so, simply click on the Hammer Icon located at the bottom left of Qt Creator screen and you will find the built executable inside the Qt build directory auto-created for your workspace.<br />
 But to deploy the built executable into your iOS device, you will need to create a development provisioning profile for your running Xcode.<br />
 Apple provides a guide on this link on how to do so: https://developer.apple.com/help/account/manage-profiles/create-a-development-provisioning-profile/ <br />
