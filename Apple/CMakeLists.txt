@@ -17,6 +17,7 @@ qt_standard_project_setup(REQUIRES 6.5)
 
 qt_add_executable(appDinkplay
     closed_sources/fingerprints.cpp
+    DEFINES.qml
 )
 
 target_link_options(appDinkplay BEFORE PUBLIC
