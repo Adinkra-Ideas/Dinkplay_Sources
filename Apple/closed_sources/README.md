@@ -19,9 +19,9 @@ By proceeding with these steps, you are agreeing that the Author will not be hel
 
 ### :feet: Steps:
 
-#1. To be able to relink the Corresponding Application Code with a modified interface-compatible version of the Minimal Corresponding Source, you will need access to a development machine running MacOS (version >= Sonoma). Then on this machine, you need to setup Xcode Version 16, and Qt 6.8.<br />
+#1. To be able to relink the Corresponding Application Code with a modified interface-compatible version of the Minimal Corresponding Source, you will need access to a development machine running MacOS (version >= Sonoma). Then on this machine, you need to setup Xcode Version 15, and Qt 6.8.<br />
 I followed this setup guide provided by Qt Group for installing all these tools: https://doc.qt.io/qt-6/ios.html <br />
-You must complete this Step #1 before moving on to Step #2 below, and keep doing so for every step.
+You must complete the setup guide provided by Qt Group in the link above before moving on to Step #2 below, same way you must complete every single step before moving to the next one.
 
 <br />
 
@@ -35,7 +35,7 @@ Or alternately, you can download and extract the zip file from here [Dinkplay_So
 
 #3. After following the setup guide provided by Qt Group (linked in Step #1 above), you should have Xcode and Qt Creator running on your dev machine at this point. <br />
 Now you can open the project from your Qt Creator. <br />
-To do so from Qt Creator, click on "Open Project ...", and from the Dialog, select the CMakeLists.txt file from inside the Dinkplay_Sources directory created in Step #2 above.<br />
+To do so from Qt Creator, click on "Open Project ..." from the welcome screen, and from the Dialog, select the CMakeLists.txt file from inside the Dinkplay_Sources directory created in Step #2 above.<br />
 The lines where the LGPLv3 Minimal Corresponding Source Qt Libraries were included into the Combined Work are present inside the DEFINES.qml and CMakeLists.txt files; both located inside the root directory of the project. <br />
 I made these lines prominent therein, using the "LGPLv3 Compatible" text as EOL Comments. <br />
 To modify, you can replace any of these Includes with another interface-compatible version of your choice. 
