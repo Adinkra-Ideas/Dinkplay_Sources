@@ -17,13 +17,7 @@ qt_standard_project_setup(REQUIRES 6.5)
 
 qt_add_executable(appDinkplay
     closed_sources/fingerprints.cpp
-)
-
-qt_add_qml_module(appDinkplay
-    URI Dinkplay
-    VERSION 1.0
-    QML_FILES
-        DEFINES.qml
+    DEFINES.qml
 )
 
 target_link_options(appDinkplay BEFORE PUBLIC
@@ -55,7 +49,6 @@ set_target_properties(appDinkplay PROPERTIES
     MACOSX_BUNDLE_INFO_PLIST ${CMAKE_SOURCE_DIR}/iOS/Info.plist
     XCODE_ATTRIBUTE_ASSETCATALOG_COMPILER_APPICON_NAME AppIcon
     XCODE_ATTRIBUTE_CODE_SIGN_ENTITLEMENTS ${CMAKE_SOURCE_DIR}/iOS/appDinkplay.entitlements
-    XCODE_ATTRIBUTE_DEVELOPMENT_TEAM 9W37AU7273 #Delete this line before deploy
 )
 
 include(GNUInstallDirs)
