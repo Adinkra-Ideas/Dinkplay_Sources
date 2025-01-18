@@ -12,7 +12,7 @@ See https://www.gnu.org/licenses/lgpl-3.0.en.html#license-text
 
 ### :grey_exclamation: Disclaimer
 The infromation provided below is intended for Educational purposes.
-By proceeding with these steps, you are agreeing that the Author will not be held liable for any loss or damage that may arise due to improper or unlawful usage of its content. 
+By proceeding with these steps, you are agreeing that the Author will not be held liable for any losses or damages that may arise due to improper or unlawful usage of its content. 
 
 <br />
 <br />
