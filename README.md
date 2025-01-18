@@ -21,9 +21,9 @@ Dinkplay App has been optimized to run with minimal resource usage. As a result,
 
 
 
-- [iOS Installation Information](/Apple)
-
 - [Android Installation Information](/Android)
+
+- [iOS Installation Information](/Apple)
 
 
 
