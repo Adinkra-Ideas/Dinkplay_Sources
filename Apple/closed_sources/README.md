@@ -1,7 +1,7 @@
 # iOS Installation Information:
 
 
-This installation information is intended to provide a guide on how to install and deploy a modified version of the Dinkplay for iOS Application, produced by relinking the Corresponding Application Code with a modified interface-compatible version of the Minimal Corresponding Source(Qt Libraries), as obligated in Section 4e of the GNU Lesser General Public License v3.
+This installation information is intended to provide a guide on how to install and deploy a modified version of the Dinkplay for iOS Application, produced by relinking the Corresponding Application Code with a modified interface-compatible version of the Minimal Corresponding Source(Qt Libraries).
 See https://www.gnu.org/licenses/lgpl-3.0.en.html#license-text
 
 Disclaimer: The tutorial outlined below is intended for Educational purpose.
