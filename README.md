@@ -1,4 +1,4 @@
-# [:memo: About Dinkplay Multi-Platform Audio Timer](#memo--documentations)
+# [:memo: About Dinkplay Multi-Platform Audio Timer](#memo--a-scheduled)
 
 <p>
 	<img src="./Apple/iOS/Assets.xcassets/AppIcon.appiconset/AppIcon1024x1024.png" width="400" height="400" />
