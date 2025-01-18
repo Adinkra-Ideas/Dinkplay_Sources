@@ -7,10 +7,17 @@
 This installation information is intended to provide a guide on how to install and deploy a modified version of the Dinkplay for iOS Application, produced by relinking the Corresponding Application Code with a modified interface-compatible version of the Minimal Corresponding Source(Qt Libraries).
 See https://www.gnu.org/licenses/lgpl-3.0.en.html#license-text
 
-Disclaimer: The tutorial outlined below is intended for Educational purpose.
-By proceeding with these steps, you are agreeing that the Author will not be held liable for any loss or damage that may occur due to improper or unlawful usage of its content. 
+<br />
+<br />
 
-Steps:
+### :grey_exclamation: Disclaimer
+The tutorial outlined below is intended for Educational purpose.
+By proceeding with these steps, you are agreeing that the Author will not be held liable for any loss or damage that may arise due to improper or unlawful usage of its content. 
+
+<br />
+<br />
+
+### :feet: Steps:
 
 #1 To be able to relink the Corresponding Application Code with a modified interface-compatible version of the Minimal Corresponding Source, you will need a computer running the MacOS (version >= Sonoma), Xcode Version 16, and Qt 6.8.
 I followed this guide provided by Qt Group to install all of these: https://doc.qt.io/qt-6/macos.html
