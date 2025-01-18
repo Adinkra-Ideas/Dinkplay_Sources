@@ -20,7 +20,7 @@ By proceeding with these steps, you are agreeing that the Author will not be hel
 ### :feet: Steps:
 
 #1 To be able to relink the Corresponding Application Code with a modified interface-compatible version of the Minimal Corresponding Source, you will need a computer running the MacOS (version >= Sonoma), Xcode Version 16, and Qt 6.8.<br />
-I followed this guide provided by Qt Group to install all of these: https://doc.qt.io/qt-6/macos.html<br />
+I followed this guide provided by Qt Group to install all of these: https://doc.qt.io/qt-6/ios.html <br />
 You must complete this step #1 before moving on to step #2 below, and keep doing so for every step.
 
 #2 Download the Corresponding Application Code and Minimal Corresponding Source of this project by cloning this repo:
