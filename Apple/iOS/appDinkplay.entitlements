@@ -7,8 +7,7 @@
 	<key>com.apple.developer.team-identifier</key>
 	<string>XXXXXXXXXX</string>
         <!--
-	<key>com.apple.security.files.bookmarks.document-scope</key>
-        <true/>-->
+	-->
 	<key>get-task-allow</key>
 	<true/>
 </dict>
