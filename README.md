@@ -1,4 +1,4 @@
-About Dinkplay Multi-Platform Audio Timer 
+# About Dinkplay Multi-Platform Audio Timer 
 
 A Scheduled Interval Audio Player App
 
