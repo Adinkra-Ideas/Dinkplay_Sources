@@ -1,4 +1,4 @@
-# [:memo: About Dinkplay Multi-Platform Audio Timer]
+# [:memo: About Dinkplay Multi-Platform Audio Timer](#memo--documentations)
 
 A Scheduled Interval Audio Player App
 
