@@ -1,4 +1,4 @@
-# iOS Installation Information:
+# :iphone: iOS Installation Information:
 
 <br />
 <br />
@@ -11,7 +11,7 @@ See https://www.gnu.org/licenses/lgpl-3.0.en.html#license-text
 <br />
 
 ### :grey_exclamation: Disclaimer
-The tutorial outlined below is intended for Educational purpose.
+The infromation provided below is intended for Educational purposes.
 By proceeding with these steps, you are agreeing that the Author will not be held liable for any loss or damage that may arise due to improper or unlawful usage of its content. 
 
 <br />
@@ -19,9 +19,9 @@ By proceeding with these steps, you are agreeing that the Author will not be hel
 
 ### :feet: Steps:
 
-#1 To be able to relink the Corresponding Application Code with a modified interface-compatible version of the Minimal Corresponding Source, you will need a computer running the MacOS (version >= Sonoma), Xcode Version 16, and Qt 6.8.
-I followed this guide provided by Qt Group to install all of these: https://doc.qt.io/qt-6/macos.html
-You have to complete this step #1 before moving on to step #2 below, and keep doing so with every single step.
+#1 To be able to relink the Corresponding Application Code with a modified interface-compatible version of the Minimal Corresponding Source, you will need a computer running the MacOS (version >= Sonoma), Xcode Version 16, and Qt 6.8.<br />
+I followed this guide provided by Qt Group to install all of these: https://doc.qt.io/qt-6/macos.html<br />
+You must complete this step #1 before moving on to step #2 below, and keep doing so for every step.
 
 #2 Download the Corresponding Application Code and Minimal Corresponding Source of this project by cloning this repo:
 git clone ... && cd ./...
