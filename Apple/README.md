@@ -48,7 +48,9 @@ To modify, you can replace any of these Includes with another interface-compatib
 To do so, simply click on the Hammer Icon located at the bottom left of Qt Creator screen and you will find the built executable inside the Qt build directory auto-created for your workspace.<br />
 But to deploy the built executable into your iOS device, you will need to create a development provisioning profile for your running Xcode.<br />
 Apple provides a guide on this link on how to do so: https://developer.apple.com/help/account/manage-profiles/create-a-development-provisioning-profile/ <br />
-After following the aforementioned guide and setting up the development provisioning profile, you can now connect your iOS device to your development machine, then click the Run icon from the opened project in Qt creator. <br />
+After following the aforementioned guide and setting up the development provisioning profile, you must modify the Dinkplay_Sources/Apple/iOS/appDinkplay.entitlements file to replace the two occurrences of the texts "XXXXXXXXXX" with your Identifier that you received.
+
+Now you can connect your iOS device to your development machine, then click the Run icon from the opened project in Qt creator. <br />
 Qt will now build and deploy Dinkplay into your connected iOS device.<br />
 
 
