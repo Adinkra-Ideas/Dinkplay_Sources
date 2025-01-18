@@ -14,7 +14,7 @@
 Dinkplay allows users to use their favorite Audios as an Interval Timer. 
 
 
-With Dinkplay, Audio contents can be played at specific start and stop intervals set by the User. This is in contrast to the existing Interval Timers that uses start and stop Tones to alert the user during a Timed Interval.
+With Dinkplay, Audio contents can be played at specific start and stop intervals set by the User. This contrasts the existing Interval Timers that use start and stop Tones to alert the user during a Timed Interval.
 
 
 Dinkplay App has been optimized to run with minimal resource usage. As a result, the Interval Timer works seamlessly even on a locked phone screen. 
