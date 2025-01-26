@@ -27,7 +27,7 @@ Both the Minimal Corresponding Source and the Qt Libraries are available as shar
 To make modifications on the portions of the Library contained in the Combined Work, you can easily use an archiving tool such as WinRAR to browse and replace any of the Qt LGPLv3 shared library, with your custom interface compatible shared library.
 <br />
 
-After making modifications, you might want to deploy the app to an android device. To do so, simply rename the extension of the modified "dinkplay*.zip" to "dinkplay*.apk", then copy it into an adroid phone and install like you would install a normal apk application.
+After making modifications, you might want to deploy the app to an android device. To do so, simply rename the extension of the modified "dinkplay*.zip" to "dinkplay*.apk", then copy it into an android phone and install it like you would install a normal apk application.
 <br />
 
 
