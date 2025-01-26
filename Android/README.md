@@ -20,7 +20,18 @@ By proceeding with these steps, you are agreeing that the Author will not be hel
 
 ### :feet: Steps:
 
-#1. To be able to relink the Corresponding Application Code with a modified interface-compatible version of the Minimal Corresponding Source, you will need access to a development machine with Qt 6.8.<br />
-I followed this Qt setup guide provided by Qt Group for installing : https://doc.qt.io/qt-6/ios.html](https://doc.qt.io/qt-6/android.html <br />
+#1. To be able to relink the Corresponding Application Code with a modified interface-compatible version of a Qt Library, first Download the appropriate dinkplay*.zip from the zip files available under the Dinkplay_Sources/Android/ directory of this Repo.<br />
 
+Both the Minimal Corresponding Source and the Qt Libraries are available as shared libraries inside the /lib/ directory in the appropriate dinkplay*.zip you have downloaded. <br />
+
+To make modifications on the portions of the Library contained in the Combined Work, you can easily use an archiving tool such as WinRAR to browse and replace any of the Qt LGPLv3 shared library, with your custom interface compatible shared library.
 <br />
+
+After making modifications, you might want to deploy the app to an android device. To do so, simply rename the extension of the modified "dinkplay*.zip" to "dinkplay*.apk", then copy it into an adroid phone and install like you would install a normal apk application.
+<br />
+
+
+There you have it..
+
+
+
