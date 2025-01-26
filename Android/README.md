@@ -20,7 +20,7 @@ By proceeding with these steps, you are agreeing that the Author will not be hel
 
 ### :feet: Steps:
 
-#1. To be able to relink the Corresponding Application Code with a modified interface-compatible version of a Qt Library, first Download the appropriate dinkplay*.zip from the zip files available under the Dinkplay_Sources/Android/ directory of this Repo.<br />
+To be able to relink the Corresponding Application Code with a modified interface-compatible version of a Qt Library, first Download the appropriate dinkplay*.zip from the zip files available under the Dinkplay_Sources/Android/ directory of this Repo.<br />
 
 Both the Minimal Corresponding Source and the Qt Libraries are available as shared libraries inside the /lib/ directory in the appropriate dinkplay*.zip you have downloaded. <br />
 
