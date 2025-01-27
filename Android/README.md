@@ -20,16 +20,18 @@ By proceeding with these steps, you are agreeing that the Author will not be hel
 
 ### :feet: Steps:
 
-To be able to relink the Corresponding Application Code with a modified interface-compatible version of a Qt Library, first Download the appropriate dinkplay*.zip from the zip files available under the Dinkplay_Sources/Android/ directory of this Repo.<br />
+To be able to relink the Corresponding Application Code with a modified interface-compatible version of a Qt Library, first Download the appropriate dinkplay*_unsigned.apk from the apk files available under the Dinkplay_Sources/Android/ directory of this Repo.<br />
 
-Both the Minimal Corresponding Source and the Qt Libraries are available as shared libraries inside the /lib/ directory in the appropriate dinkplay*.zip you have downloaded. <br />
+Both the Minimal Corresponding Source and the Qt Libraries are available as shared libraries inside the /lib/ directory in the appropriate dinkplay*_unsigned.apk you have downloaded. <br />
 
 To make modifications on the portions of the Library contained in the Combined Work, you can easily use an archiving tool such as WinRAR to browse and replace any of the Qt LGPLv3 shared library, with your custom interface compatible shared library.
 <br />
 
-After making modifications, you might want to deploy the app to an android device. To do so, you must first sign your final copy of the  
+After making modifications, you might want to deploy the app to an android device. To do so, you must first sign your final copy of the dinkplay*_unsigned.apk.
 The page on https://developer.android.com/tools/apksigner explains how to sign an apk using the Android-approved way.
-After signing, now you can xopy the apk into your android phone and install it as you would install a normal apk application.
+<br />
+
+After signing, now you can copy the apk into your android phone and install it as you would install a normal apk application.
 <br />
 
 
