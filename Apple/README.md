@@ -21,6 +21,7 @@ By proceeding with these steps, you are agreeing that the Author will not be hel
 
 #1. To be able to relink the Corresponding Application Code with a modified interface-compatible version of the Minimal Corresponding Source, you will need access to a development machine running MacOS (version >= Sonoma). Then on this machine, you need to setup Xcode Version 15, and Qt 6.8.<br />
 I followed this setup guide provided by Qt Group for installing all these tools: https://doc.qt.io/qt-6/ios.html <br />
+Then install Qt Creator on MacOS using this guide from QT Group https://doc.qt.io/qtcreator/creator-how-to-install.html<br />
 You must complete the setup guide provided by Qt Group in the link above before moving on to Step #2 below, same way you must complete every single step before moving to the next one.
 
 <br />
