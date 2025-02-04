@@ -2,11 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>application-identifier</key>
-	<string>XXXXXXXXXX.com.adinkra.appDinkplay</string>
+        <!--<key>application-identifier</key>
+        <string>XXXXXXXXXX.com.adinkra.appDinkplay</string>
 	<key>com.apple.developer.team-identifier</key>
-	<string>XXXXXXXXXX</string>
+        <string>XXXXXXXXXX</string>-->
 	<key>get-task-allow</key>
-	<true/>
+        <true/>
 </dict>
 </plist>
