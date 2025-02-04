@@ -46,7 +46,7 @@ To modify, you can replace any of these Includes with another interface-compatib
 
 
 #4. When you're done modifying, you may want to build the project.<br />
-To do so without a Simulator, first you have to turn on developer mode option on the deployment iOS device. Apple has a tutorial for how to turn on developer mode here https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device.
+To do so without an arm64 Simulator, first you have to turn on developer mode option on the deployment arm64 iOS device. Apple has a tutorial for how to turn on developer mode here https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device.
 
 To deploy the built executable into your iOS device, you will need to create an Apple development provisioning profile.<br />
 Apple provides a guide on this link on how to do so: https://developer.apple.com/help/account/manage-profiles/create-a-development-provisioning-profile/ <br />
