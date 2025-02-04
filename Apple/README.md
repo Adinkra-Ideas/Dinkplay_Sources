@@ -11,7 +11,7 @@ See https://www.gnu.org/licenses/lgpl-3.0.en.html#license-text
 <br />
 
 ### :grey_exclamation: Disclaimer
-The infromation provided below is intended for Educational purposes.
+The information provided below is intended for Educational purposes.
 By proceeding with these steps, you are agreeing that the Author will not be held liable for any losses or damages that may arise due to improper or unlawful usage of its content. 
 
 <br />
@@ -26,7 +26,7 @@ You must complete the setup guide provided by Qt Group in the links above before
 
 <br />
 
-#2. Download the Corresponding Application Code and Minimal Corresponding Source of this project by cloning this repo:
+#2. Download the Corresponding Application Code of this project by cloning this repo:
 ```bash
 git clone https://github.com/Adinkra-Ideas/Dinkplay_Sources.git && cd Dinkplay_Sources
 ```
